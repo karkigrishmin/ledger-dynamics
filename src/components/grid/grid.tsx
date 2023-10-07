@@ -1,6 +1,6 @@
+import { gridCols, spacings, xGaps, yGaps } from "@/theme/theme";
 import clsx from "clsx";
 import { ReactNode } from "react";
-import { spacings } from "@/components/section-header";
 
 interface IGridProps {
 	className?: string;
@@ -10,18 +10,6 @@ interface IGridProps {
 	gapY?: keyof typeof yGaps;
 	gap?: keyof typeof spacings;
 }
-
-const gridCols = {
-	3: "lg:grid-cols-3",
-};
-
-const xGaps = {
-	24: "gap-x-[24px]",
-};
-
-const yGaps = {
-	60: "gap-y-[60px]",
-};
 
 const Grid = ({
 	className,

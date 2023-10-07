@@ -1,6 +1,12 @@
 import clsx from "clsx";
 import { ReactNode } from "react";
-import { spacings } from "../section-header";
+import {
+	borderColors,
+	borderSizes,
+	roundness,
+	sizes,
+	spacings,
+} from "@/theme/theme";
 
 interface ICardProps {
 	padding?: "24" | "16";
@@ -25,24 +31,6 @@ const Card = ({
 	footer,
 	gap,
 }: ICardProps) => {
-	const sizes = {
-		24: "p-[24px]",
-		16: "p-[16px]",
-	};
-
-	const borderColors = {
-		"border-layout": "border-border-layout",
-		transparent: "border-transparent",
-	};
-
-	const borderSizes = {
-		1: "border-[1px]",
-	};
-
-	const roundness = {
-		8: "rounded-[8px]",
-	};
-
 	return (
 		<div
 			className={clsx(
